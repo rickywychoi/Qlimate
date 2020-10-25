@@ -17,8 +17,9 @@ export default function App() {
   return (
     <NavigationContainer linking={linking}>
       <Stack.Navigator>
-        <Stack.Screen name="mainHome" component={MainHome} />
-        <Stack.Screen name="quizListDemo" component ={QuizListDemo} />
+        <Stack.Screen name="Qlimate" component={MainHome} />
+        <Stack.Screen name="Quizzes" component ={QuizListDemo} />
+        <Stack.Screen name="About" component={About} />
       </Stack.Navigator>
     </NavigationContainer>
   )

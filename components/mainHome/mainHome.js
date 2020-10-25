@@ -1,13 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { Link } from '@react-navigation/native'
 
 const MainHome = () => (
   <View style={styles.container}>
-    <Text>branch Dev</Text>
-    <Link to="/quizListDemo">List of Quizzes</Link>
-    <StatusBar style="auto" />
+    <Text style={styles.heading}>Welcome to Qlimate</Text>
+    <Link to='/Quizzes'>
+      <Button
+        title="Show Quiz!"
+        accessibilityLabel="Button to show quizzes"/>
+    </Link>
+    <StatusBar style='auto' />
   </View>
 );
 
@@ -16,7 +20,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
+  },
+  heading: {
+    fontSize: "2em",
+    fontWeight: "bold"
   },
 });
 
