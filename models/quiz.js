@@ -1,14 +1,17 @@
 const mongoose = require('mongoose')
 
-const quizSchema = new mongoose.Schema({
+const choiceSchema = new mongoose.Schema({
+  name: String,
+  content: String
+})
+
+const quizSchema = new mongoose.Schema
+quizSchema.add({
   title: {
     type: String,
     required: true
   },
-  choices: {
-    type: Object,
-    required: true
-  },
+  choices: [choiceSchema],
   answer: {
     type: String,
     required: true

@@ -11,11 +11,26 @@ Content-Type: application/json
 
 {
   "title": "What is the primary source of energy for Earth's climate system?",
-  "answer": {
-    "a": "Heat from Earth's interior",
-    "b": "The Sun",
-    ""
-  }
+  "choices": [
+    {
+      "name": "a",
+      "content": "sadf"
+    },
+    {
+      "name": "b",
+      "content": "asdf"
+    },
+    {
+      "name": "c",
+      "content": "xcvz"
+    },
+    {
+      "name": "d",
+      "content": "vzxc"
+    }
+  ],
+  "answer": "The Sun",
+  "author": "Columbia_University"
 }
 
 ###

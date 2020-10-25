@@ -19,6 +19,7 @@ router.get('/:id', getQuizById, (req, res) => {
 
 // Creating one
 router.post('/', async (req, res) => {
+  // res.json(req.body.choices)
   const quiz = new Quiz({
     title: req.body.title,
     choices: req.body.choces,
@@ -32,8 +33,6 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(400).json({ message: err.message })
   }
-
-  console.log(req)
 })
 
 // Updating one
