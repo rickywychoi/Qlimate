@@ -21,7 +21,9 @@ router.get('/:id', getQuizById, (req, res) => {
 router.post('/', async (req, res) => {
   const quiz = new Quiz({
     title: req.body.title,
-    answer: req.body.answer
+    choices: req.body.choces,
+    answer: req.body.answer,
+    author: req.body.author
   })
   try {
     const newQuiz = await quiz.save()
