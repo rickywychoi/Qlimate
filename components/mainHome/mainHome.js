@@ -5,6 +5,7 @@ import { Link } from '@react-navigation/native'
 
 const MainHome = () => (
   <View style={styles.container}>
+    <Text>branch Dev</Text>
     <Link to="/quizListDemo">List of Quizzes</Link>
     <StatusBar style="auto" />
   </View>
