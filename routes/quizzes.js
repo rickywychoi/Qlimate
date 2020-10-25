@@ -5,7 +5,7 @@ const Quiz = require('../models/quiz')
 // Getting all
 router.get('/', async (req, res) => {
   try {
-    const quizzes = await Quiz.find().exec()
+    const quizzes = await Quiz.find()
     res.send(quizzes)
   } catch (err) {
     res.status(500).json({ message: err.message })

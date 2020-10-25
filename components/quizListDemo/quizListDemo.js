@@ -5,9 +5,9 @@ import axios from 'axios'
 const uri = "http://localhost:3000"
 
 const QuizListDemo = () => {
-  const [quizzes, setQuizzes] = useState({})
+  const [quizzes, setQuizzes] = useState(null)
   useEffect(() => {
-    axios.get("/quiz").then(res => {
+    axios.get(uri + "/quiz").then(res => {
       console.log(res.data)
     }).catch(err => console.error(err)).then(() => {
       
