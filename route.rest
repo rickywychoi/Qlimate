@@ -1,1 +1,29 @@
 GET http://localhost:3000/quiz
+
+###
+
+GET http://localhost:3000/quiz/5f9478090085c231948e4bfb
+
+###
+
+POST http://localhost:3000/quiz
+Content-Type: application/json
+
+{
+  "title": "Climate Quiz 1 test",
+  "answer": "This is the answer 1"
+}
+
+###
+
+DELETE http://localhost:3000/quiz/5f9478090085c231948e4bfb
+
+###
+
+PATCH http://localhost:3000/quiz/5f9478090085c231948e4bfb
+Content-Type: application/json
+
+{
+  "title": "Climate Quiz 1 modified v2",
+  "answer": "This is the answer 1 modified v2"
+}
